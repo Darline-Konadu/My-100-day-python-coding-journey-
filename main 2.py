@@ -1,6 +1,13 @@
-
-two_digit_number = input("Type a two digit number: ")
-first_number = two_digit_number[0]
-second_number = two_digit_number[1]
-answer = int(first_number)+ int(second_number)
-print(answer)
+height = float(input("Enter your height in m: "))
+weight = float(input("Enter your weight in kg: "))
+bmi = round(weight/height**2)
+if bmi < 18.5:
+    print(f"Your bmi is {bmi}, so,you are underweight")
+elif bmi < 25:
+    print(f"Your bmi is {bmi},so,you have a normal weight")
+elif bmi < 30:
+    print(f"Your bmi is {bmi},so,you are overweight")
+elif bmi < 35:
+    print(f"Your bmi is {bmi},so,you are obese")
+else:
+    print(f"Your bmi is {bmi},so,you are clinically obese")
